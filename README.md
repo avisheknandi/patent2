@@ -12,3 +12,5 @@ Tiered sensors wake only when the conformal prediction set is ambiguous; the act
 * `docs/PATENT_ROADMAP.md` – claims, novelty analysis, filing → publication → grant plan
 
 Requires numpy, scikit-learn, matplotlib, reportlab, pymupdf. **Results are from a simulator; real-data validation is still to do.**
+
+* `Invention_Disclosure_Format_B_latex.zip` / `latex/` – LaTeX project of the IDF-B (rebuild: `python docs/build_latex.py`)
