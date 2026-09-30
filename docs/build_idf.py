@@ -87,6 +87,13 @@ st += [KeepTogether([P("10. Technology readiness level", H),
  tbl([["TRL 1", "TRL 2", "TRL 3", "TRL 4", "TRL 5", "TRL 6", "TRL 7", "TRL 8", "TRL 9"],
       ["Basic principles observed", "Concept formulated", "[X] Experimental proof of concept (simulation, this work)", "Validated in lab (planned: testbed)", "Relevant environment", "Demonstrated in relevant env.", "Prototype in operational env.", "System complete & qualified", "Proven in operational env."]],
      [19*mm]*9, fs=6.6),
- P("Ticked: <b>TRL 3</b> (experimental proof of concept). Target: TRL 4 after a lab testbed run.", S)]), Spacer(1, 6), P("---------------------- END OF THE DOCUMENT -----------------------------", S)]
+ P("Ticked: <b>TRL 3</b> (experimental proof of concept). Target: TRL 4 after a lab testbed run.", S)])]
+st += [P("Declaration of Technical Integrity and IP Origin", H),
+ P("We, the undersigned, declare that to the best of our knowledge the following is true:")]
+import json as _j
+for _i, _t in enumerate(_j.load(open(os.path.join(ROOT, "docs", "declaration.json")), encoding="utf-8") if False else _j.load(open(os.path.join(ROOT, "docs", "declaration.json")))):
+    st += [P("%d. %s" % (_i + 1, _t))]
+st += [Spacer(1, 10), tbl([["Inventor name", "Signature", "Date"], ["", "", ""], ["", "", ""]], [70*mm, 70*mm, 40*mm])]
+st += [Spacer(1, 6), P("---------------------- END OF THE DOCUMENT -----------------------------", S)]
 SimpleDocTemplate(os.path.join(ROOT, "Invention_Disclosure_Format_B_FILLED.pdf"), pagesize=A4, leftMargin=15*mm, rightMargin=15*mm, topMargin=18*mm, bottomMargin=14*mm,
                   title="IDF-B: AmI-CC", author="Inventor(s) – to be completed").build(st, onFirstPage=hf, onLaterPages=hf)

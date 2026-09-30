@@ -31,3 +31,9 @@
 
 ## 4. Open items (need the inventors)
 Inventor names/affiliations/signatures; real-data pilot; attorney search; decision on jurisdictions; funding-agency/ institutional disclosure obligations.
+
+## 5. Making the validation real (before signing the declaration or raising the TRL)
+1. Run `python tests/test_cascade.py` and `python experiments/run_experiments.py`; read `amicg/cascade.py` until you can explain every step and change something yourself.
+2. Replace the simulator with a public activity/smart-home dataset, using subject-wise splits (calibrate on some people, test on others) with the same three feature tiers.
+3. Measure energy on hardware: a low-power MCU with a PIR/light sensor, a mid-tier sensor and a camera or mmWave module. Log mJ per wake-up and replace the 1/6/40 units with measured values.
+4. Re-report the same tables. Only then consider TRL 4 and update Section 8, the TRL tick and the declaration.

@@ -156,6 +156,23 @@ Basic principles observed & Technology concept formulated & \textbf{$\boxtimes$ 
 
 Ticked: \textbf{TRL~3} (experimental proof of concept, simulation). Target: TRL~4 after a lab testbed run.
 
+
+\sect{Declaration of Technical Integrity and IP Origin}
+We, the undersigned, declare that to the best of our knowledge the following is true:
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+\item The experimental results in Section 8 were obtained by running the accompanying reference implementation on a \textbf{synthetic (simulated) smart-home benchmark}. No laboratory, prototype or field measurements are reported, and no simulated result is presented as empirical data.
+\item The Technology Readiness Level claimed is \textbf{TRL 3} (experimental proof of concept). No higher TRL is claimed.
+\item A generative AI assistant was used in ideation, software implementation, experiment design and drafting of this disclosure. The inventors have reviewed the content, re-run the code and results, and take responsibility for their accuracy. Use of AI tools is disclosed in line with institutional policy.
+\item The prior-art list in Section 3 was compiled by web search and has not yet been confirmed by a professional patent search.
+\item Prior publication / disclosure: \rule{6cm}{0.4pt} (inventors to state whether any part of this work has been published, submitted or disclosed elsewhere).
+\item Inventor contributions to conception: \rule{6cm}{0.4pt} (inventors to complete).
+\end{enumerate}
+\vspace{8pt}
+\begin{tabular}{@{}p{6.5cm}p{6.5cm}p{3.5cm}@{}}
+\toprule Inventor name & Signature & Date\\ \midrule
+\rule{0pt}{18pt} & & \\ \rule{0pt}{18pt} & & \\ \bottomrule
+\end{tabular}
+
 \begin{center}\footnotesize ---------------------- END OF THE DOCUMENT -----------------------------\end{center}
 \end{document}
 """
