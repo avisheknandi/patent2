@@ -8,6 +8,7 @@ Tiered sensors wake only when the conformal prediction set is ambiguous; the act
 * `tests/test_cascade.py` – unit tests
 * `results/` – `results.json`, figures
 * `Invention_Disclosure_Format_B_FILLED.pdf` – completed IDF-B (rebuild: `python docs/build_idf.py`)
+* `Invention_Disclosure_Format_B_FILLED.docx` – same IDF-B as Word (rebuild: `node docs/build_idf_docx.js`, needs `docx` npm package)
 * `docs/PATENT_ROADMAP.md` – claims, novelty analysis, filing → publication → grant plan
 
 Requires numpy, scikit-learn, matplotlib, reportlab, pymupdf. **Results are from a simulator; real-data validation is still to do.**
